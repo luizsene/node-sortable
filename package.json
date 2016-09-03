@@ -1,0 +1,15 @@
+{
+  "name": "node-sort",
+  "version": "1.0.0",
+  "description": "Ordering library for",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "sort"
+  ],
+  "author": "Fábio Pereira",
+  "license": "MIT"
+}
