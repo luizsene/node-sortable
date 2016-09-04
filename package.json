@@ -1,18 +1,39 @@
 {
   "name": "node-sort",
-  "version": "1.0.0",
-  "description": "Ordering library for",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.0",
+  "description": "Ordering library for Nodejs",
+  "main": "sort.js",
   "keywords": [
     "nodejs",
-    "sort"
+    "sort",
+    "combsort",
+    "quicksort",
+    "mergesort",
+    "timesort",
+    "heapsort",
+    "bubblesort",
+    "insertionsort",
+    "selectionsort",
+    "treesort",
+    "shellsort",
+    "bucketsort",
+    "radixsort",
+    "countingsort",
+    "cubesort"
   ],
-  "author": "Fábio Pereira",
+  "author": "Fábio Pereira <fabio.pereira.gti@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "eslint": "^3.4.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.4.0"
+  },
+  "scripts": {
+    "test": "mocha ./test",
+    "eslint": "eslint ./core/**/*.js ",
+    "cover": "istanbul cover _mocha -- ./test/* --recursive",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "jsdocs": "jsdoc ./core/**/*.js"
   }
 }

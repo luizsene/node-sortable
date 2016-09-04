@@ -1,4 +1,4 @@
-## node-sort
+#  node-sort :rocket::smile:
 
 ### :pushpin:  What is that ?
 
@@ -47,7 +47,7 @@ In computer science, big O notation is used to classify algorithms by how they r
       <td><a href="https://en.wikipedia.org/wiki/Comb_sort">Combsort</a></td>
       <td>:o:<code class="yellow">Θ(n log(n))</code></td>
       <td>:o: <code class="orange"> Ω(n^2/2^p)</code></td>
-      <td>:o: <code class="orange">O(n^2)</code></td>
+      <td>:red_circle: <code class="orange">O(n^2)</code></td>
       <td>:large_orange_diamond:<code class="yellow">O(1)</code></td>
    </tr>
 
@@ -146,6 +146,17 @@ In computer science, big O notation is used to classify algorithms by how they r
 </tbody></table>
 
 
+### :pushpin:  How to install
+---
+
+Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed.
+
+##### :white_check_mark:  Run:
+
+```
+npm install node-sort --save
+```
+---
 
 
 ### :pushpin:  Methods
@@ -163,7 +174,7 @@ sort.comb(array, sort.ASC)
 sort.comb(array, comparisonFunction)
 ```
 
-##### :white_check_mark: Bubble Sort
+##### :white_check_mark: Quick Sort
 ```
 sort.bubble(array, sort.DESC)
 ```
@@ -174,7 +185,18 @@ sort.bubble(array, sort.ASC)
 sort.bubble(array, comparisonFunction)
 ```
 
-##### :white_check_mark: Quick Sort
+##### :white_check_mark: Merge Sort
+```
+sort.merge(array, sort.DESC)
+```
+```
+sort.merge(array, sort.ASC)
+```
+```
+sort.merge(array, comparisonFunction)
+```
+
+##### :white_check_mark: Bubble Sort
 ```
 sort.bubble(array, sort.DESC)
 ```
@@ -199,9 +221,9 @@ sort.bubble(letters, sort.ASC); //["A","M","W","Z"]
 sort.bubble(letters, sort.DESC); //["Z","W","M","A"]
 ```
 
-:warning: __Important Note:__ Some comparison conditions are the reverse of the natural because this way the algorithm takes best advantage. Before implementing a custom comparison function check the operation of the algorithm. It is very suitable to use drive tests.
-
 :pencil2: Example customized comparison function:
+
+:warning: __Important Note:__ Some comparison conditions are the reverse of the natural because this way the algorithm takes best advantage. Before implementing a custom comparison function check the operation of the algorithm. It is very suitable to use drive tests.
 
 ```javascript   
 let peoples = [
@@ -222,6 +244,51 @@ const fnDESC = (a, b) =>{
 sort.bubble(peoples, fnASC); //[{name: "Mary", age: 9}, {name: "Alex", age: 12},{name: "Max", age: 34},{name: "Justin", age: 53}];
 sort.bubble(peoples, fnDESC); //[{name: "Justin", age: 53},{name: "Max", age: 34},{name: "Alex", age: 12},{name: "Mary", age: 9}];
 ```
+
+### :pushpin:  Development
+---
+
+##### Code style:
+
+Follow the [node-sort style guide](https://github.com/1fabiopereira/node-sort-library/blob/master/CODE-STYLE.md).
+
+Validate the code style with [ESLint](http://eslint.org/):
+
+```
+npm run eslint
+```
+
+##### Code Docs
+Generate code docs with [JSDocs](http://usejsdoc.org/):
+
+```
+npm run jsdocs
+```
+
+View code docs in docs/index.html
+
+##### Tests
+
+Run the unit tests with [mocha](https://mochajs.org/):
+
+```
+npm run test
+```
+
+Calculate the coverage with [Istanbul](http://gotwarlost.github.io/istanbul/):
+```
+npm run cover
+```
+---
+
+### :pushpin: Versioning
+To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
+
+
+### :pushpin: Contributing
+Find on our [issues](https://github.com/1fabiopereira/node-sort-library/issues) the next steps of the project ;)
+Want to contribute? [Follow these recommendations](https://github.com/1fabiopereira/node-sort-library/blob/master/CONTRIBUTING.md).
+
 
 ### :pushpin:  License
 ---
