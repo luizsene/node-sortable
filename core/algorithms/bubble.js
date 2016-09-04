@@ -2,11 +2,7 @@
 
 const bubble = (array, fnCompare) =>{
 
-  // ordenação crescente por padrão
-  if(typeof(fnCompare) == "boolean" && !fnCompare)
-    fnCompare = (a, b) => a > b;
-  else if(typeof(fnCompare) == "boolean")
-    fnCompare = (a, b) => a < b;
+  fnCompare = require("../condition/bubble")(fnCompare);
 
   if (!Array.isArray(array) || array.length === 0) return [];
 
@@ -21,11 +17,10 @@ const bubble = (array, fnCompare) =>{
 
   do {
     swapped = false;
-    array.forEach((elem, i) => {
+    for (let i = 0; i < array.length -1; i++) {
       if(fnCompare(array[i], array[i+1])) fnSwap(i);
-    });
+    }
   } while (swapped);
-
   return array;
 }
 

@@ -2,17 +2,16 @@
 const assert = require('chai').assert;
 const sort = require('../sort');
 
-describe('Bubble', () => {
+describe('Mergesort', ()=> {
 
-  const fn_descrescente = (a,b) => a > b;
-
-  const exec = (array, fnCompare) =>{
-    return sort.bubble(array, fnCompare);
+  var exec = (array, fnCompare) =>{
+    return sort.merge(array, fnCompare);
   }
 
   // Ordenação quando não é um array
   describe('Não Array', ()=> {
-    it("Null", ()=>{
+
+    it("Null", () =>{
       assert.deepEqual([], exec(null, sort.ASC), "Array vazio quando valor for null");
       assert.deepEqual([], exec(null, sort.DESC), "Array vazio quando valor for null");
     })
@@ -21,10 +20,12 @@ describe('Bubble', () => {
       assert.deepEqual([], exec(undefined, sort.ASC), "Array vazio quando valor for undefined");
       assert.deepEqual([], exec(undefined, sort.DESC), "Array vazio quando valor for undefined");
     })
+
   });
 
-  // Ordenação quando o array é vazio ou indefinido
+  //Ordenação quando o array é vazio ou indefinido
   describe('Array Vazio', () => {
+
     it('Ordenação decrescente array vazio', ()=> {
       assert.deepEqual([], exec([], sort.DESC), "Tipo do retorno Array");
     });
@@ -32,7 +33,9 @@ describe('Bubble', () => {
     it('Ordenação crescente array vazio', ()=> {
       assert.deepEqual([], exec([], sort.ASC), "Tipo do retorno Array");
     });
+
   });
+
 
   // Verifica a ordenção de um array de números
   describe('Array de Números', () => {
@@ -65,7 +68,6 @@ describe('Bubble', () => {
     });
   });
 
-
   describe('Array Objetos', ()=> {
     let array_in = [
       {name: "Alex", age: 12},
@@ -89,11 +91,11 @@ describe('Bubble', () => {
     ]
 
     const fnASC = (a,b) => {
-      return a.age > b.age;
+      return a.age < b.age;
     };
 
     const fnDESC = (a,b) => {
-      return a.age < b.age;
+      return a.age > b.age;
     };
 
     it('Ordenação crescente', ()=> {

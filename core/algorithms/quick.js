@@ -2,12 +2,7 @@
 
 const quick = (array, fnCompare) => {
 
-  // ordenação crescente por padrão
-  if(typeof(fnCompare) == "boolean" && !fnCompare)
-    fnCompare = (a, b) => a < b;
-  else if(typeof(fnCompare) == "boolean")
-    fnCompare = (a, b) => a > b;
-
+  fnCompare = require("../condition/quick")(fnCompare);
 
   if (!Array.isArray(array) || array.length === 0) return [];
 

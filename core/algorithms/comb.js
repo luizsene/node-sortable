@@ -2,34 +2,7 @@
 
 const comb = (array, fnCompare) =>{
 
-  // ordenação crescente por padrão
-  if(typeof(fnCompare) == "boolean" && !fnCompare)
-    fnCompare = (a, b) => {
-      var r;
-
-      if(a < b)
-        r = -1;
-      else if(a == b)
-        r = 0;
-      else
-        r = 1;
-
-      return r;
-    };
-
-  else if(typeof(fnCompare) == "boolean")
-    fnCompare = (a, b) => {
-      var r;
-
-      if(a > b)
-        r = -1;
-      else if(a == b)
-        r = 0;
-      else
-        r = 1;
-
-      return r;
-    };
+fnCompare = require("../condition/comb")(fnCompare);
 
   if (!Array.isArray(array) || array.length === 0) return [];
 

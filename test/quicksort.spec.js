@@ -68,4 +68,43 @@ describe('Quicksort', ()=> {
     });
   });
 
+  describe('Array Objetos', ()=> {
+    let array_in = [
+      {name: "Alex", age: 12},
+      {name: "Max", age: 34},
+      {name: "Mary", age: 9},
+      {name: "Justin", age: 53}
+    ];
+
+    let array_out_asc = [
+      {name: "Mary", age: 9},
+      {name: "Alex", age: 12},
+      {name: "Max", age: 34},
+      {name: "Justin", age: 53}
+    ]
+
+    let array_out_desc = [
+      {name: "Justin", age: 53},
+      {name: "Max", age: 34},
+      {name: "Alex", age: 12},
+      {name: "Mary", age: 9}
+    ]
+
+    const fnASC = (a,b) => {
+      return a.age < b.age;
+    };
+
+    const fnDESC = (a,b) => {
+      return a.age > b.age;
+    };
+
+    it('Ordenação crescente', ()=> {
+      assert.deepEqual(array_out_asc, exec(array_in, fnASC));
+    });
+
+    it('Ordenação decrescente', ()=> {
+      assert.deepEqual(array_out_desc, exec(array_in, fnDESC));
+    });
+  });
+
 });

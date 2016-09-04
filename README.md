@@ -1,4 +1,10 @@
-## node-sort-library
+## node-sort
+
+### :pushpin:  What is that ?
+
+
+__node-sort__ is a library that implements various sorting algorithms and displays its performance according to BIG -O notation.
+
 
 ### :pushpin:  Big-O Complexity Chart
 
@@ -36,6 +42,14 @@ In computer science, big O notation is used to classify algorithms by how they r
       <th>Worst</th>
       <th>Worst</th>
     </tr>
+
+    <tr>
+      <td><a href="https://en.wikipedia.org/wiki/Comb_sort">Combsort</a></td>
+      <td>:o:<code class="yellow">Θ(n log(n))</code></td>
+      <td>:o: <code class="orange"> Ω(n^2/2^p)</code></td>
+      <td>:o: <code class="orange">O(n^2)</code></td>
+      <td>:large_orange_diamond:<code class="yellow">O(1)</code></td>
+   </tr>
 
     <tr>
       <td><a href="http://en.wikipedia.org/wiki/Quicksort">Quicksort</a></td>
@@ -172,7 +186,7 @@ sort.bubble(array, comparisonFunction)
 ```
 
 
- :pencil2: How to use:
+ :pencil2: Example how to use:
 
 ```javascript   
 let numbers = [10, 1, 2, 13];
@@ -185,7 +199,9 @@ sort.bubble(letters, sort.ASC); //["A","M","W","Z"]
 sort.bubble(letters, sort.DESC); //["Z","W","M","A"]
 ```
 
-:pencil2: It can be passed a custom comparison function:
+:warning: __Important Note:__ Some comparison conditions are the reverse of the natural because this way the algorithm takes best advantage. Before implementing a custom comparison function check the operation of the algorithm. It is very suitable to use drive tests.
+
+:pencil2: Example customized comparison function:
 
 ```javascript   
 let peoples = [
@@ -196,15 +212,15 @@ let peoples = [
 ];
 
 const fnASC = (a, b) =>{
-  return a.age < b.age;
+  return a.age > b.age; //inverse of the natural condition
 }
 
 const fnDESC = (a, b) =>{
-  return a.age > b.age;
+  return a.age < b.age; //inverse of the natural condition
 }
 
 sort.bubble(peoples, fnASC); //[{name: "Mary", age: 9}, {name: "Alex", age: 12},{name: "Max", age: 34},{name: "Justin", age: 53}];
-sort.bubble(peoples, fnDESC); //[{name: "Justin", age: 53},,{name: "Max", age: 34},{name: "Alex", age: 12},{name: "Mary", age: 9}];
+sort.bubble(peoples, fnDESC); //[{name: "Justin", age: 53},{name: "Max", age: 34},{name: "Alex", age: 12},{name: "Mary", age: 9}];
 ```
 
 ### :pushpin:  License
