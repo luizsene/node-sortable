@@ -2,7 +2,7 @@
 
 ### Big-O Complexity Chart
 
-<img src="./img/chart.svg">
+<img src="img/chart.svg">
 
 In computer science, big O notation is used to classify algorithms by how they respond to changes in input size, such as how the processing time of an algorithm changes as the problem size becomes extremely large.
 
