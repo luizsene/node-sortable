@@ -156,6 +156,10 @@ Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) 
 ```
 npm install sortable --save
 ```
+
+```
+const sort = require('sortable');
+```
 ---
 
 
