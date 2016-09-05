@@ -37,9 +37,11 @@
     "type": "git",
     "url": "https://github.com/1fabiopereira/node-sort.git"
   },
+
   "bugs": {
     "url": "https://github.com/1fabiopereira/node-sort/issues"
   },
+
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.4.0",
@@ -47,6 +49,7 @@
     "jsdoc": "^3.4.0",
     "mocha": "^3.0.2"
   },
+
   "scripts": {
     "test": "mocha ./test",
     "eslint": "eslint ./core/**/*.js ",
