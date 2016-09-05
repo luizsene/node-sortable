@@ -29,17 +29,17 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/1fabiopereira/sortable#pushpin--license"
+      "url": "https://github.com/1fabiopereira/node-sortable#pushpin--license"
     }
   ],
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/1fabiopereira/sortable.git"
+    "url": "https://github.com/1fabiopereira/node-sortable"
   },
 
   "bugs": {
-    "url": "https://github.com/1fabiopereira/sortable/issues"
+    "url": "https://github.com/1fabiopereira/node-sortable/issues"
   },
 
   "devDependencies": {
