@@ -1,14 +1,14 @@
-#  node-sort :rocket::smile:
+#  sortable :rocket::smile:
 
 ### :pushpin:  What is that ?
 
 
-__node-sort__ is a library that implements various sorting algorithms and displays its performance according to BIG -O notation.
+__sortable__ is a library that implements various sorting algorithms and displays its performance according to BIG -O notation.
 
 
 ### :pushpin:  Big-O Complexity Chart
 
-<img src="https://cdn.rawgit.com/1fabiopereira/node-sort/master/img/chart.svg">
+<img src="https://cdn.rawgit.com/1fabiopereira/sortable/master/img/chart.svg">
 
 In computer science, big O notation is used to classify algorithms by how they respond to changes in input size, such as how the processing time of an algorithm changes as the problem size becomes extremely large.
 
@@ -154,7 +154,7 @@ Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) 
 ##### :white_check_mark:  Run:
 
 ```
-npm install node-sort --save
+npm install sortable --save
 ```
 ---
 
@@ -250,7 +250,7 @@ sort.bubble(peoples, fnDESC); //[{name: "Justin", age: 53},{name: "Max", age: 34
 
 ##### Code style:
 
-Follow the [node-sort style guide](https://github.com/1fabiopereira/node-sort/blob/master/CODE-STYLE.md).
+Follow the [sortable style guide](https://github.com/1fabiopereira/sortable/blob/master/CODE-STYLE.md).
 
 Validate the code style with [ESLint](http://eslint.org/):
 
@@ -286,8 +286,8 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 
 ### :pushpin: Contributing
-Find on our [issues](https://github.com/1fabiopereira/node-sort/issues) the next steps of the project ;)
-Want to contribute? [Follow these recommendations](https://github.com/1fabiopereira/node-sort/blob/master/CONTRIBUTING.md).
+Find on our [issues](https://github.com/1fabiopereira/sortable/issues) the next steps of the project ;)
+Want to contribute? [Follow these recommendations](https://github.com/1fabiopereira/sortable/blob/master/CONTRIBUTING.md).
 
 
 ### :pushpin:  License

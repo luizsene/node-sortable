@@ -1,5 +1,5 @@
 {
-  "name": "node-sort",
+  "name": "sortable",
   "version": "0.1.0",
   "description": "Ordering library for Nodejs",
   "main": "sort.js",
@@ -29,17 +29,17 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/1fabiopereira/node-sort#pushpin--license"
+      "url": "https://github.com/1fabiopereira/sortable#pushpin--license"
     }
   ],
 
   "repository": {
     "type": "git",
-    "url": "https://github.com/1fabiopereira/node-sort.git"
+    "url": "https://github.com/1fabiopereira/sortable.git"
   },
 
   "bugs": {
-    "url": "https://github.com/1fabiopereira/node-sort/issues"
+    "url": "https://github.com/1fabiopereira/sortable/issues"
   },
 
   "devDependencies": {
