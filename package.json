@@ -21,13 +21,31 @@
     "countingsort",
     "cubesort"
   ],
+
   "author": "Fábio Pereira <fabio.pereira.gti@gmail.com>",
-  "license": "MIT",
+
+  "contributors":[],
+
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/1fabiopereira/node-sort#pushpin--license"
+    }
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1fabiopereira/node-sort.git"
+  },
+  "bugs": {
+    "url": "https://github.com/1fabiopereira/node-sort/issues"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.4.0",
     "istanbul": "^0.4.5",
-    "jsdoc": "^3.4.0"
+    "jsdoc": "^3.4.0",
+    "mocha": "^3.0.2"
   },
   "scripts": {
     "test": "mocha ./test",
