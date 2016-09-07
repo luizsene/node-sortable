@@ -266,7 +266,7 @@ let array = [126, 328, 636, 341, 416, 131, 328]
   sort.radix(array, 1);
   ```
 
-  Least significant digit output: 34__1__, 13__1__, 12__6__, 63__6__, 41__6__, 32__8__, 32__8__
+  Least significant digit output: 341, 131, 126, 636, 416, 328, 328
 
   ---
 
@@ -274,7 +274,7 @@ let array = [126, 328, 636, 341, 416, 131, 328]
   sort.radix(array, 2);
   ```
 
-  Next high  significant digit output: 4__1__6, 1__2__6, 3__2__8, 3__2__8, 1__3__1, 6__3__6, 3__4__1
+  Next high  significant digit output: 416, 126, 328, 328, 131, 636, 341
 
   ---
 
@@ -282,7 +282,7 @@ let array = [126, 328, 636, 341, 416, 131, 328]
   sort.radix(array, 3);
   ```
 
-  Most significant digit output: __1__26, __1__31, __3__28, __3__28, __3__41, __4__16, __6__36
+  Most significant digit output: 1 26, 131, 328, 328, 341, 416, 636
 
   ---
 
