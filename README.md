@@ -180,13 +180,13 @@ sort.comb(array, comparisonFunction)
 
 ##### :white_check_mark: Quick Sort
 ```
-sort.bubble(array, sort.DESC)
+sort.quick(array, sort.DESC)
 ```
 ```
-sort.bubble(array, sort.ASC)
+sort.quick(array, sort.ASC)
 ```
 ```
-sort.bubble(array, comparisonFunction)
+sort.quick(array, comparisonFunction)
 ```
 
 ##### :white_check_mark: Merge Sort
@@ -217,12 +217,12 @@ sort.bubble(array, comparisonFunction)
 ```javascript   
 let numbers = [10, 1, 2, 13];
 
-sort.bubble(numbers, sort.ASC); //[1,2,10,13]
-sort.bubble(numbers, sort.DESC); //[13,10,2,1]
+sort.method(numbers, sort.ASC); //[1,2,10,13]
+sort.method(numbers, sort.DESC); //[13,10,2,1]
 
 let letters = ["A","Z","W","M"];
-sort.bubble(letters, sort.ASC); //["A","M","W","Z"]
-sort.bubble(letters, sort.DESC); //["Z","W","M","A"]
+sort.method(letters, sort.ASC); //["A","M","W","Z"]
+sort.method(letters, sort.DESC); //["Z","W","M","A"]
 ```
 
 :pencil2: Example customized comparison function:
@@ -248,6 +248,44 @@ const fnDESC = (a, b) =>{
 sort.bubble(peoples, fnASC); //[{name: "Mary", age: 9}, {name: "Alex", age: 12},{name: "Max", age: 34},{name: "Justin", age: 53}];
 sort.bubble(peoples, fnDESC); //[{name: "Justin", age: 53},{name: "Max", age: 34},{name: "Alex", age: 12},{name: "Mary", age: 9}];
 ```
+
+##### :white_check_mark: Radix Sort
+```
+sort.radix(array, significant_digit);
+```
+:pencil2: Radix Example:
+
+:warning: This implementation only supports integers
+
+* Input list:
+```
+let array = [126, 328, 636, 341, 416, 131, 328]
+```
+
+  ```
+  sort.radix(array, 1);
+  ```
+
+  Least significant digit output: 34__1__, 13__1__, 12__6__, 63__6__, 41__6__, 32__8__, 32__8__
+
+  ---
+
+  ```
+  sort.radix(array, 2);
+  ```
+
+  Next high  significant digit output: 4__1__6, 1__2__6, 3__2__8, 3__2__8, 1__3__1, 6__3__6, 3__4__1
+
+  ---
+
+  ```
+  sort.radix(array, 3);
+  ```
+
+  Most significant digit output: __1__26, __1__31, __3__28, __3__28, __3__41, __4__16, __6__36
+
+  ---
+
 
 ### :pushpin:  Development
 ---

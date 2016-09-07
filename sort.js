@@ -4,6 +4,8 @@ module.exports = {
   bubble: require('./core/algorithms/bubble'),
   comb: require('./core/algorithms/comb'),
   merge: require('./core/algorithms/merge'),
+  radix: require('./core/algorithms/radix'),
+  bucket: require('./core/algorithms/bucket'),
   ASC:  false,
   DESC: true
 }
