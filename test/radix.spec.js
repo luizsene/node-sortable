@@ -6,8 +6,8 @@ describe('Radix', () => {
 
   const fn_descrescente = (a,b) => a > b;
 
-  const exec = (array, maxDigit, fnCompare) =>{
-    return sort.radix(array, maxDigit, fnCompare);
+  const exec = (array, maxDigit) =>{
+    return sort.radix(array, maxDigit);
   }
 
   // Ordenação quando não é um array
