@@ -211,6 +211,16 @@ sort.bubble(array, sort.ASC)
 sort.bubble(array, comparisonFunction)
 ```
 
+##### :white_check_mark: Insertion Sort
+```
+sort.insertion(array, sort.DESC)
+```
+```
+sort.insertion(array, sort.ASC)
+```
+```
+sort.insertion(array, comparisonFunction)
+```
 
  :pencil2: Example how to use:
 

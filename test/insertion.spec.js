@@ -2,10 +2,10 @@
 const assert = require('chai').assert;
 const sort = require('../sort');
 
-describe('BucketSort', ()=> {
+describe('InsertionSort', ()=> {
 
     var exec = (array, fnCompare) =>{
-        return sort.bucket(array, 6, fnCompare);
+        return sort.insertion(array, fnCompare);
     }
 
     // Ordenação quando não é um array
@@ -91,11 +91,11 @@ describe('BucketSort', ()=> {
         ]
 
         const fnASC = (a,b) => {
-            return a.age < b.age;
+            return a.age > b.age;
         };
 
         const fnDESC = (a,b) => {
-            return a.age > b.age;
+            return a.age < b.age;
         };
 
         it('Ordenação crescente', ()=> {

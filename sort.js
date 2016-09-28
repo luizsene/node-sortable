@@ -6,6 +6,7 @@ module.exports = {
   merge: require('./core/algorithms/merge'),
   radix: require('./core/algorithms/radix'),
   bucket: require('./core/algorithms/bucket'),
+  insertion: require('./core/algorithms/insertion'),
   ASC:  false,
   DESC: true
 }
