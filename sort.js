@@ -7,6 +7,7 @@ module.exports = {
   radix: require('./core/algorithms/radix'),
   bucket: require('./core/algorithms/bucket'),
   insertion: require('./core/algorithms/insertion'),
+  shell: require('./core/algorithms/shell'),
   ASC:  false,
   DESC: true
 }

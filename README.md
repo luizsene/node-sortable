@@ -225,13 +225,25 @@ sort.insertion(array, comparisonFunction)
 ##### :white_check_mark: Bucket Sort
 :warning: This implementation only supports integers
 ```
-sort.bucket(array, sort.DESC)
+sort.bucket(array, bucketSize, sort.DESC)
 ```
 ```
-sort.bucket(array, sort.ASC)
+sort.bucket(array, bucketSize, sort.ASC)
 ```
 ```
-sort.bucket(array, comparisonFunction)
+sort.bucket(array, bucketSize, comparisonFunction)
+```
+
+##### :white_check_mark: Shell Sort
+:warning: This implementation only supports integers
+```
+sort.shell(array, sort.DESC)
+```
+```
+sort.shell(array, sort.ASC)
+```
+```
+sort.shell(array, comparisonFunction)
 ```
 
  :pencil2: Example how to use:
