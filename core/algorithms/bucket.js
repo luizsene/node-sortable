@@ -5,7 +5,7 @@ const insertion = require('./insertion');
 
 const _bucket = (array, bucketSize, fnCompare) =>{
 
-    fnCompare = require('../condition/insertion')(fnCompare);
+    fnCompare = require('../condition/bucket')(fnCompare);
 
     if (!Array.isArray(array) || array.length === 0) return [];
 
@@ -39,13 +39,13 @@ const _bucket = (array, bucketSize, fnCompare) =>{
     array.length = 0;
 
     for (i = 0; i < buckets.length; i++) {
-        buckets[i] = insertion(buckets[i], fnCompare);
+        buckets[i] = insertion(buckets[i], false);
         for (let j = 0; j < buckets[i].length; j++) {
-         array.push(buckets[i][j]);
+            array.push(buckets[i][j]);
         }
     }
 
-    return array;
+    return fnCompare(0,1) ? array : array.reverse();
 };
 
 module.exports = _bucket;

@@ -222,6 +222,18 @@ sort.insertion(array, sort.ASC)
 sort.insertion(array, comparisonFunction)
 ```
 
+##### :white_check_mark: Bucket Sort
+:warning: This implementation only supports integers
+```
+sort.bucket(array, sort.DESC)
+```
+```
+sort.bucket(array, sort.ASC)
+```
+```
+sort.bucket(array, comparisonFunction)
+```
+
  :pencil2: Example how to use:
 
 ```javascript   

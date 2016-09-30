@@ -1,4 +1,5 @@
 'use strict';
+
 const _insertion = (array, fnCompare) =>{
 
     fnCompare = require('../condition/insertion')(fnCompare);
