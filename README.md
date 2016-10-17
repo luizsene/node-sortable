@@ -1,4 +1,4 @@
-#  node-sortable :rocket::smile:
+#  node-sortable :rocket::smile: [![Build Status](https://travis-ci.org/1fabiopereira/node-sortable.svg?branch=master)](https://travis-ci.org/1fabiopereira/node-sortable) [![npm version](https://badge.fury.io/js/node-sortable.svg)](https://badge.fury.io/js/node-sortable)
 
 ### :pushpin:  What is that ?
 
