@@ -14,23 +14,24 @@ In computer science, big O notation is used to classify algorithms by how they r
 
 [See more](https://en.wikipedia.org/wiki/Big_O_notation)
 
-### :pushpin: Big-O notation
----
+# :pushpin:  Roadmap
 
-| Icon  | Performance |
-| ------------- | ------------- |
-| :red_circle:  | Horrible  |
-| :o:           | Bad       |
-| :large_orange_diamond:  | Horrible  |
-| :black_circle:  | Good      |
-| :eight_spoked_asterisk:  | Excellent |
-
-
-
-| Algorithm  | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Worst Space Complexity
-| ---------- | -------------------- |------------------------ | ----------------------|---------------------------- |
-|Combsort    | :o: Θ(n log(n))      | :o: Ω(n^2/2^p)          | :red_circle: O(n^2)   | :large_orange_diamond: O(1) |
-|Quicksort   | :o: Ω(n log(n))      | :o: Θ(n log(n))         | :red_circle: O(n^2)   | :black_circle: O(log(n))    |
+| First Header  | Second Header |
+| :-------------: | :-------------: |
+| Quick  | OK  |
+| Merge  | OK  |
+| Comb  | OK  |
+| Time  | TODO  |
+| Heap  | TODO  |
+| Bubble  | OK  |
+| Insertion  | OK |
+| Selection  | TODO  |
+| Tree  | TODO  |
+| Shell | OK  |
+| Bucket  | OK  |
+| Radix  | OK  |
+| Counting  | TODO  |
+|  Cube  | TODO  |
 
 
 ### :pushpin:  How to install
