@@ -16,20 +16,20 @@ In computer science, big O notation is used to classify algorithms by how they r
 
 # :pushpin:  Roadmap
 
-| First Header  | Second Header |
+| Algorithm  | Status |
 | :-------------: | :-------------: |
-| Quick  | OK  |
-| Merge  | OK  |
-| Comb  | OK  |
+| Quick  | DONE  |
+| Merge  | DONE  |
+| Comb  | DONE  |
 | Time  | TODO  |
 | Heap  | TODO  |
-| Bubble  | OK  |
-| Insertion  | OK |
+| Bubble  | DONE  |
+| Insertion  | DONE |
 | Selection  | TODO  |
 | Tree  | TODO  |
-| Shell | OK  |
-| Bucket  | OK  |
-| Radix  | OK  |
+| Shell | DONE  |
+| Bucket  | DONE  |
+| Radix  | DONE  |
 | Counting  | TODO  |
 |  Cube  | TODO  |
 
